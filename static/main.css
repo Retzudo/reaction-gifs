@@ -20,7 +20,7 @@ body {
 .gif__image-container {
     box-sizing: border-box;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
 }
 
 .gif__image {

@@ -36,11 +36,84 @@
         },
         {
             "url": "http://i.imgur.com/GhfnDWD.gif",
-            "title": "Dogs at table",
+            "title": "Ruff day",
             "tags": [
                 "dogs",
-                "table",
                 "eating"
+            ]
+        },
+        {
+            "url": "https://i.imgur.com/tqzGqEg.gif",
+            "title": "Kill me",
+            "tags": [
+                "kill",
+                "suicide"
+            ]
+        },
+        {
+            "url": "http://i.imgur.com/dveRlxR.gif",
+            "title": "What'd you do?!",
+            "tags": [
+                "suprised",
+                "how"
+            ]
+        },
+        {
+            "url": "http://i.imgur.com/A07kXwK.gif",
+            "title": "Praise Gaben",
+            "tags": [
+                "gaben",
+                "steam",
+                "games"
+            ]
+        },
+        {
+            "url": "http://i.imgur.com/o46y9d4.gif",
+            "title": "Bug reporting",
+            "tags": [
+                "bugs",
+                "issue",
+                "boss"
+            ]
+        },
+        {
+            "url": "http://i.imgur.com/bkCXNcu.jpg",
+            "title": "So sad",
+            "tags": [
+                "fake",
+                "sad",
+                "too bad"
+            ]
+        },
+        {
+            "url": "https://i.imgur.com/ROLGvTv.gif",
+            "title": "Rince and repeat",
+            "tags": [
+                "live",
+                "machine"
+            ]
+        },
+        {
+            "url": "https://www.overclockers.at/files/intredasting_194297.jpg",
+            "title": "Intredasting",
+            "tags": [
+                "interesting"
+            ]
+        },
+        {
+            "url": "http://media.giphy.com/media/atQXlRTntnPA4/giphy.gif",
+            "title": "Good one",
+            "tags": [
+                "laughing",
+                "leaving"
+            ]
+        },
+        {
+            "url": "http://i.imgur.com/AgsGW.gif",
+            "title": "OMG",
+            "tags": [
+                "reading",
+                "bert"
             ]
         }
     ]
