@@ -1,0 +1,38 @@
+{% extends 'master.html' %}
+
+{% block styles %}
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block content %}
+    {% raw %}
+        <div class="container" data-ng-controller="GifsController" data-ng-cloak>
+            <div class="row">
+                <div class="twelve columns">
+                    <input type="search" class="u-full-width" id="search" data-ng-model="search" data-ng-change="filter()">
+                </div>
+            </div>
+            <div class="row" data-ng-repeat="row in gifRows">
+                <div class="three columns" data-ng-repeat="gif in row">
+                    <figure class="gif">
+                        <div class="gif__image-container">
+                            <img class="gif__image" data-ng-src="{{ gif.url }}" alt="{{ gif.title }}">
+                        </div>
+                        <figcaption class="gif__caption">
+                            <h5 class="gif__title">{{ gif.title }}</h5>
+                            <input class="gif__url" data-ng-model="gif.url" onfocus="this.select();" onmouseup="return false;">
+                            <div class="gif__tags">
+                                <span class="gif__tag" data-ng-repeat="tag in gif.tags">{{ tag }}</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns" data-ng-if="gifs.length == 0">
+                    <h1 class="error">No tags found :(</h1>
+                </div>
+            </div>
+        </div>
+    {% endraw %}
+{% endblock %}

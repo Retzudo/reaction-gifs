@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    {% block styles %}{% endblock %}
     <title>{% block title %}Reaction Gifs{% endblock %}</title>
 </head>
-<body>
+<body data-ng-app="GifsApp">
     {% block content %}{% endblock %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
-    {% block scripts %}{% endblock %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    {% block javascripts %}{% endblock %}
 </body>
 </html>
