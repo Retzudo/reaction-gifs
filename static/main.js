@@ -6,15 +6,11 @@
         $scope.search = '';
 
         var allGifs = [];
-        var error = false;
 
         $http.get('/gifs')
             .then(function(data) {
                 $scope.gifRows = _.chunk(data.data.gifs, 4);
                 allGifs = data.data.gifs;
-                error = false;
-            }, function(data) {
-                error = true;
             });
 
         $scope.filter = function() {
