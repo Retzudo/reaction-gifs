@@ -16,7 +16,11 @@
                 <div class="three columns" data-ng-repeat="gif in row">
                     <figure class="gif">
                         <div class="gif__image-container">
-                            <img class="gif__image" data-ng-src="{{ gif.url }}" alt="{{ gif.title }}">
+                            <img class="gif__image" data-ng-src="{{ gif.url }}" alt="{{ gif.title }}" ng-if="!gif.gfycat">
+                            <video autoplay loop class="gif__image" ng-if="gif.gfycat">
+                                <source ng-src="{{ gif.webm }}" type="video/webm">
+                                <source ng-src="{{ gif.mp4 }}" type="video/mp4">
+                            </video>
                         </div>
                         <figcaption class="gif__caption">
                             <h5 class="gif__title">{{ gif.title }}</h5>
@@ -35,4 +39,16 @@
             </div>
         </div>
     {% endraw %}
+{% endblock %}
+
+{% block javascripts %}
+    <!-- Gfycat -->
+    <script>
+     (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = 'http://assets.gfycat.com/js/gfyajax-0.517d.js';
+        s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
+    </script>
 {% endblock %}
