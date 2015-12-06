@@ -1,36 +1,35 @@
 {% extends 'master.html' %}
 
-{% block styles %}
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-{% endblock %}
-
 {% block content %}
     {% raw %}
         <div class="container" data-ng-controller="GifsController" data-ng-cloak>
-            <div class="row">
-                <div class="twelve columns">
-                    <input type="search" class="u-full-width" id="search" data-ng-model="search" data-ng-change="filter()">
+            <nav class="blue-grey lighten-1">
+                <div class="nav-wrapper">
+                    <div class="input-field">
+                        <input id="search" type="search" ng-model="search" required>
+                        <label for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
                 </div>
-            </div>
-            <div class="row" data-ng-repeat="row in gifRows">
-                <div class="three columns" data-ng-repeat="gif in row">
-                    <figure class="gif">
-                        <div class="gif__image-container">
+            </nav>
+            <div class="row">
+                <div class="col s12 m4 l3" data-ng-repeat="gif in gifs | filter:search">
+                    <div class="card large blue-grey lighten-1">
+                        <div class="card-image">
                             <img class="gif__image" data-ng-src="{{ gif.url }}" alt="{{ gif.title }}">
+                            <span class="card-title">{{ gif.title }}</span>
                         </div>
-                        <figcaption class="gif__caption">
-                            <h5 class="gif__title">{{ gif.title }}</h5>
-                            <input class="gif__url" data-ng-model="gif.url" onfocus="this.select();" onmouseup="return false;">
-                            <div class="gif__tags">
-                                <span class="gif__tag" data-ng-repeat="tag in gif.tags">{{ tag }}</span>
+                        <div class="card-content blue-grey lighten-2">
+                            <div class="chip" data-ng-repeat="tag in gif.tags">
+                                {{ tag }}
                             </div>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns" data-ng-if="gifs.length == 0">
-                    <h1 class="error">No tags found :(</h1>
+                        </div>
+                        <div class="card-action">
+                            <div class="input-fields white-text">
+                                <input type="url" data-ng-model="gif.url" onfocus="this.select();" onmouseup="return false;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
