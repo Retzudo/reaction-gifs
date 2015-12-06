@@ -2,31 +2,35 @@
 
 {% block content %}
     {% raw %}
-        <div class="container" data-ng-controller="GifsController" data-ng-cloak>
-            <nav class="blue-grey lighten-1">
-                <div class="nav-wrapper">
-                    <div class="input-field">
-                        <input id="search" type="search" ng-model="search" required>
-                        <label for="search"><i class="material-icons">search</i></label>
-                        <i class="material-icons">close</i>
+        <div data-ng-controller="GifsController" data-ng-cloak>
+            <div class="navbar-fixed">
+                <nav class="blue-grey lighten-1">
+                    <div class="nav-wrapper">
+                        <div class="input-field">
+                            <input id="search" type="search" ng-model="search" required>
+                            <label for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
                     </div>
-                </div>
-            </nav>
-            <div class="row">
-                <div class="col s12 m4 l3" data-ng-repeat="gif in gifs | filter:search">
-                    <div class="card large blue-grey lighten-1">
-                        <div class="card-image">
-                            <img class="gif__image" data-ng-src="{{ gif.url }}" alt="{{ gif.title }}">
-                            <span class="card-title">{{ gif.title }}</span>
-                        </div>
-                        <div class="card-content blue-grey lighten-2">
-                            <div class="chip" data-ng-repeat="tag in gif.tags">
-                                {{ tag }}
+                </nav>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m4 l3" data-ng-repeat="gif in gifs | filter:search">
+                        <div class="card large blue-grey lighten-1">
+                            <div class="card-image">
+                                <img class="gif__image" data-ng-src="{{ gif.url }}" alt="{{ gif.title }}">
+                                <span class="card-title">{{ gif.title }}</span>
                             </div>
-                        </div>
-                        <div class="card-action">
-                            <div class="input-fields white-text">
-                                <input type="url" data-ng-model="gif.url" onfocus="this.select();" onmouseup="return false;">
+                            <div class="card-content blue-grey lighten-2">
+                                <div class="chip" data-ng-repeat="tag in gif.tags">
+                                    {{ tag }}
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div class="input-fields white-text">
+                                    <input type="url" data-ng-model="gif.url" onfocus="this.select();" onmouseup="return false;">
+                                </div>
                             </div>
                         </div>
                     </div>
