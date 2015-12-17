@@ -231,7 +231,6 @@
             "tags": ["hurley", "lost"]
         },
         {
-<<<<<<< HEAD
             "url": "https://i.imgur.com/Z0jpX2v.jpg",
             "title": "End Users",
             "tags": ["glass", "water"]
@@ -240,11 +239,11 @@
             "url": "http://38.media.tumblr.com/b59635aab404a19acde3c16a4afa75c0/tumblr_inline_nzbu99CIOs1raprkq_500.gif",
             "title": "Bug fixed...oh wait",
             "tags": ["duffy duck", "bugs bunny"]
-=======
+        },
+        {
             "url": "https://i.imgur.com/nuk06EO.jpg",
             "title": "Losing my shit",
             "tags": ["car"]
->>>>>>> 14df33469c3d8235ef68ea9fee6215a04afe2b18
         }
     ]
 }
