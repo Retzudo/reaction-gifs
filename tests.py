@@ -1,16 +1,16 @@
 import gifs
-import json
 import unittest
+import yaml
 
 
 class TestCase(unittest.TestCase):
     def setUp(self):
         self.client = gifs.app.test_client()
 
-    def test_json(self):
-        """Test if JSON file is valid."""
-        with open('gifs.json') as f:
-            json.loads(f.read())
+    def test_yaml(self):
+        """Test if YAML file is valid."""
+        with open('gifs.yml') as f:
+            yaml.load(f.read())
 
     def test_index(self):
         response = self.client.get('/')

@@ -1,4 +1,5 @@
-from flask import Flask, render_template, Response, abort
+from flask import Flask, render_template, abort, jsonify
+import yaml
 
 app = Flask(__name__)
 
@@ -11,12 +12,12 @@ def index():
 @app.route('/gifs')
 def gifs():
     try:
-        with open('./gifs.json') as f:
-            data = f.read()
-    except IOError:
+        with open('./gifs.yml') as f:
+            data = yaml.load(f.read())
+    except (IOError, yaml.scanner.ScannerError):
         abort(404)
 
-    return Response(data, mimetype='application/json')
+    return jsonify(data)
 
 
 if __name__ == '__main__':
