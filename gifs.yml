@@ -198,5 +198,9 @@ gifs:
           - looking
     - url: https://i.imgur.com/6ekTd2I.gif
       title: Expert
+      tags: []
+    - url: https://i.imgur.com/6ekTd2I.gif
+      title: Almost friday
       tags:
-        - expert
+          - typing
+          - working
