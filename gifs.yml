@@ -198,8 +198,13 @@ gifs:
           - looking
     - url: https://i.imgur.com/6ekTd2I.gif
       title: Expert
+      tags: []
+    - url: https://i.imgur.com/IO1ZkMY.gif
+      title: Almost friday
       tags:
         - expert
+          - typing
+          - working
     - url: https://media.serious.io/5d95f4bc8a065c46/serious.gif
       title: No idea
       tags:

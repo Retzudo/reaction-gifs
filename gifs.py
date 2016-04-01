@@ -1,4 +1,4 @@
-from flask import Flask, render_template, abort, jsonify
+from flask import Flask, render_template, abort, jsonify, send_file
 import yaml
 
 app = Flask(__name__)
@@ -18,6 +18,11 @@ def gifs():
         abort(404)
 
     return jsonify(data)
+
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_file('static/favicon.ico')
 
 
 if __name__ == '__main__':
