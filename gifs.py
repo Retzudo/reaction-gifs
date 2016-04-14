@@ -9,7 +9,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/gifs')
+@app.route('/gifs.json')
 def gifs():
     try:
         with open('./gifs.yml') as f:
