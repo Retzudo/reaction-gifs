@@ -7,7 +7,7 @@
         $scope.gifs = [];
         $scope.search = '';
 
-        $http.get('/gifs').then(function (response) {
+        $http.get('/gifs.json').then(function (response) {
             $scope.gifs = response.data.gifs;
         });
     }]);
