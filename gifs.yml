@@ -235,4 +235,13 @@ gifs:
           - dog
           - burning
           - fire
+    - url: https://i.imgur.com/MiC6C6l.gif
+      title: Money
+      tags:
+          - pay day
+          - check
+    - url: https://www.reactiongifs.com/r/hfma.gif
+      title: High five
+      tags:
+          - million angels
 
