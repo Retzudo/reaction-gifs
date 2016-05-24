@@ -252,4 +252,9 @@ gifs:
     - url: https://i.imgur.com/7O2FM6I.gif
       title: Disappearing Homer
       tags: []
+    - url: https://media.giphy.com/media/s59Csd4R2DtQI/giphy.gif
+      title: Golf clap
+      tags:
+          - conan o'brien
+          - slow clap
 
