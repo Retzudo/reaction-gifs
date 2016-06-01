@@ -52,7 +52,7 @@ gifs:
           - fake
           - too bad
     - url: https://i.imgur.com/ROLGvTv.gif
-      title: Rince and repeawt
+      title: Rince and repeat
       tags:
           - life
           - machine
@@ -207,19 +207,56 @@ gifs:
     - url: https://media.serious.io/5d95f4bc8a065c46/serious.gif
       title: No idea
       tags: []
-    - url: http://www.reactiongifs.us/wp-content/uploads/2013/05/give_a_fuck.gif
+    - url: https://www.reactiongifs.us/wp-content/uploads/2013/05/give_a_fuck.gif
       title: Give a fuck
       tags: []
-    - url: http://i.imgur.com/NWmdMk0.gif
+    - url: https://i.imgur.com/NWmdMk0.gif
       title: Just do it
       tags:
           - Shia LaBeouf
-    - url: http://38.media.tumblr.com/6ae3cb32c6ec7b5464f42693c350da0d/tumblr_inline_o5svqleg7s1raprkq_500.gif
+    - url: https://38.media.tumblr.com/6ae3cb32c6ec7b5464f42693c350da0d/tumblr_inline_o5svqleg7s1raprkq_500.gif
       title: Resignation cat
       tags:
           - sigh
           - resignation
           - fuck
+    - url: https://i.imgur.com/001jS8G.gif
+      title: Instant regret
+      tags:
+          - anchorman
+          - ron burgundy
+    - url: https://media.giphy.com/media/l41lGvinEgARjB2HC/giphy.gif
+      title: What
+      tags:
+          - jeopardy
+    - url: https://i.imgur.com/c4jt321.png
+      title: This is fine
+      tags:
+          - dog
+          - burning
+          - fire
+    - url: https://i.imgur.com/MiC6C6l.gif
+      title: Money
+      tags:
+          - pay day
+          - check
+    - url: https://www.reactiongifs.com/r/hfma.gif
+      title: High five
+      tags:
+          - million angels
+    - url: https://i.imgur.com/RlSL5Kz.gif
+      title: Salt
+      tags:
+          - intensifying
+          - salty
+    - url: https://i.imgur.com/7O2FM6I.gif
+      title: Disappearing Homer
+      tags: []
+    - url: https://media.giphy.com/media/s59Csd4R2DtQI/giphy.gif
+      title: Golf clap
+      tags:
+          - conan o'brien
+          - slow clap
     - url: https://66.media.tumblr.com/32bbb2ab04343918b0aae6bb344478fe/tumblr_mheqdq2juT1rnqwsco1_500.gif
       title: Bingo
       tags: []
