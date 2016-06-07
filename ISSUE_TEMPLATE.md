@@ -1,6 +1,6 @@
 ## New gif proposal
 
-**URL (must be https)**: 
+**URL** (must be https): 
 
 **Title**: 
 
