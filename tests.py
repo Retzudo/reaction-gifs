@@ -21,6 +21,15 @@ class TestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.mimetype, 'application/json')
 
+    def test_https(self):
+        """Test if all gif URLs are HTTPS URLs."""
+        data = []
+        with open('gifs.yml') as f:
+            data = yaml.load(f.read())
+
+        for gif in data['gifs']:
+            self.assertTrue(gif['url'].startswith('https'))
+
 
 if __name__ == '__main__':
     unittest.main()
