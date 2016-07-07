@@ -1,6 +1,6 @@
 (function() {
     "use strict";
-    
+
     var app = angular.module('GifsApp', []);
 
     app.controller('GifsController', ['$scope', '$http', function($scope, $http) {
@@ -11,4 +11,4 @@
             $scope.gifs = response.data.gifs;
         });
     }]);
-})();
+}());
