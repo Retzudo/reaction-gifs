@@ -23,7 +23,7 @@
                                 <span class="card-title">{{ gif.title }}</span>
                             </div>
                             <div class="card-content blue-grey lighten-2">
-                                <div class="chip" data-ng-repeat-start="tag in gif.tags" style="margin-bottom: 0.5rem;">
+                                <div class="chip" data-ng-repeat-start="tag in gif.get('tags', [])" style="margin-bottom: 0.5rem;">
                                     {{ tag }}
                                 </div>
                                 <span data-ng-repeat-end>&nbsp;</span>
