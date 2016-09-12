@@ -1,7 +1,5 @@
 ## New gif proposal
 
-**URL** (must be https): 
-
-**Title**: 
-
-**Tags** (must not include title):
+- **URL**: must be HTTPS
+- **Title**: 
+- **Tags**: optional and must not include title
