@@ -19,7 +19,10 @@
                     <div class="col s12 m4 l3" data-ng-repeat="gif in gifs | filter:search">
                         <div class="card large blue-grey lighten-1">
                             <div class="card-image">
-                                <img class="gif__image" data-ng-src="{{ gif.url }}" alt="{{ gif.title }}">
+                                <!--<img class="gif__image" data-ng-src="{{ gif.url }}" alt="{{ gif.title }}">-->
+                                <div class="gif__image">
+                                    <gif-preview preview="gif.preview" gif="gif.cached"></gif-preview>
+                                </div>
                                 <span class="card-title">{{ gif.title }}</span>
                             </div>
                             <div class="card-content blue-grey lighten-2">
