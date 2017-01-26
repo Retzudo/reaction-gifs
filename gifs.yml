@@ -311,3 +311,13 @@ gifs:
           - heartless
           - john cleese
           - monty python
+    - url: https://i.imgur.com/KAnv8tD.gif
+      title: Looking Up
+      tags:
+          - john cleese
+          - monty python
+    - url: https://i.imgur.com/pyyQtEg.gif
+      title: Run Away!
+      tags:
+          - graham chapman
+          - monthy python
