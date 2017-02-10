@@ -289,6 +289,9 @@ gifs:
       title: You're out
     - url: https://media0.giphy.com/media/yoJC2Olx0ekMy2nX7W/giphy.gif
       title: Rain
+      tags:
+          - doctor who
+          - david tennant
     - url: https://i.imgur.com/LBM55wY.gif
       title: J. Jonah Jameson
       tags:
