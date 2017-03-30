@@ -19,7 +19,7 @@
                     <div class="nav-item">
                         <div class="field">
                             <p class="control has-icon">
-                                <input class="input" type="search" placeholder="Search" ng-model="search">
+                                <input class="input" type="search" placeholder="Search" ng-model="search" ng-change="lazyLoad()">
                                 <span class="icon">
                                     <i class="fa fa-search"></i>
                                 </span>
@@ -37,7 +37,7 @@
                                 <p class="card-header-title">{{ gif.title }}</p>
                             </header>
                             <div class="card-image">
-                                <img ng-src="{{ gif.url }}" alt="{{ gif.title }}">
+                                <img lazy-img="{{ gif.url }}" alt="{{ gif.title }}">
                             </div>
                             <div class="card-content">
                                 <span class="tag" ng-repeat="tag in gif.tags">{{ tag }}</span>
