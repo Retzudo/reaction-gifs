@@ -25,7 +25,7 @@ gifs:
       tags:
           - dogs
           - eating
-    - url: https://i.imgur.com/HanrH4R.gif
+    - url: https://media.giphy.com/media/9e1VPfBaNvvEY/giphy.gif
       title: Kill me
       tags:
           - suicide
@@ -322,3 +322,13 @@ gifs:
       tags:
           - graham chapman
           - monthy python
+    - url: https://imgur.com/gjRp51B
+      title: Discord
+      tags:
+          - anime
+          - everyone
+    - url: https://i.imgur.com/Za7uvet.gif
+      title: Nej
+      tags:
+          - knugen
+          - swedish
