@@ -322,7 +322,7 @@ gifs:
       tags:
           - graham chapman
           - monthy python
-    - url: https://imgur.com/gjRp51B
+    - url: https://imgur.com/gjRp51B.gif
       title: Discord
       tags:
           - anime
@@ -332,3 +332,8 @@ gifs:
       tags:
           - knugen
           - swedish
+    - url: https://i.giphy.com/media/TT7JW4Qm7uaNW/200.gif
+      title: The Rock
+      tags:
+          - dwayne johnson
+          - smelling
