@@ -9,7 +9,7 @@ class TestCase(unittest.TestCase):
 
     def test_yaml(self):
         """Test if YAML file is valid."""
-        with open('gifs.yml') as f:
+        with open('gifs.yaml') as f:
             yaml.load(f.read())
 
     def test_index(self):
@@ -24,7 +24,7 @@ class TestCase(unittest.TestCase):
     def test_https(self):
         """Test if all gif URLs are HTTPS URLs."""
         data = []
-        with open('gifs.yml') as f:
+        with open('gifs.yaml') as f:
             data = yaml.load(f.read())
 
         for gif in data['gifs']:
