@@ -23,7 +23,3 @@ def gifs():
 @app.route('/favicon.ico')
 def favicon():
     return send_file('static/favicon.ico')
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
