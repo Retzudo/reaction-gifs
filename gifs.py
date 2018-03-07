@@ -12,7 +12,7 @@ def index():
 @app.route('/gifs.json')
 def gifs():
     try:
-        with open('./gifs.yml') as f:
+        with open('./gifs.yaml') as f:
             data = yaml.load(f.read())
     except (IOError, yaml.scanner.ScannerError):
         abort(404)
