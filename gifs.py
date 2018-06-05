@@ -1,7 +1,9 @@
 from flask import Flask, render_template, abort, jsonify, send_file
+from flask_cors import CORS
 import yaml
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/')
