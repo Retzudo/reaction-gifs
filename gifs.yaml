@@ -213,8 +213,10 @@ gifs:
       tags:
           - intensifying
           - salty
-    - url: https://i.imgur.com/7O2FM6I.gif
+    - url: https://media.giphy.com/media/q8C0Ljmy4F6Ss/giphy.gif
       title: Disappearing Homer
+      tags:
+          - hedge
     - url: https://media.giphy.com/media/s59Csd4R2DtQI/giphy.gif
       title: Golf clap
       tags:
